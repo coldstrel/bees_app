@@ -1,0 +1,19 @@
+---
+title: "Reading objects from a {targets} pipeline"
+author: "Aldo FERNANDEZ"
+date: "today"
+format: html
+---
+```{r}
+targets::tar_read(colonies_vs_production_alabama)
+```
+
+
+```{r}
+targets::tar_read(time_series_california)
+```
+
+```{r}
+targets::tar_read(production_1995)
+```
+

@@ -1,0 +1,12 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+honey_data|stem|4a072d82e83d050d|3d8e5f857c63cf80|f0d1238cf1dea7cb|-1028066376||t20110.611788619s|s20320b|20320|rds|local|vector|||0.01||
+plot_colonies_vs_production|function|e69627e3ccba3566|||||||||||||||
+get_data|function|a57ada2b0fae502a
+.Random.seed|object|fe6dcb78b705ec8c
+plot_production_by_year|function|c5c48016e62cf7e8
+plot_colonies_vs_production_multi|function|869d4347ffd4fa23
+plot_time_series_colonies_vs_production|function|c3ed5db736fd93e9
+colonies_vs_production_alabama|stem|78a7f36c1e3800b4|136ca0dc338495a1|9a2f0d6fb88c28b3|1051255717||t20110.6608006741s|s133491b|133491|rds|local|vector|||0.03||
+production_1995|stem|116af2a1c5848c95|cedafc8581122a01|12cf1e7f2db735a6|1869363437||t20110.6608017268s|s115257b|115257|rds|local|vector|||0.02||
+time_series_california|stem|97bae07321b06791|a5981ba4cbe0bad5|077caa1dbbd8bd1e|398508483||t20110.6608053126s|s162841b|162841|rds|local|vector|||0.22|Using size aesthetic for lines was deprecated in ggplot2 3.4.0.ℹ Please use linewidth instead.|
+my_doc|stem|4e9d1466e7dec8cf|dac21b78e4cf322a|223459ece3b4eb26|-798192088|my_doc.html*my_doc_files*my_doc.qmd|t20110.6609138642s|s956997b|956997|file|local|vector|||9.46||
