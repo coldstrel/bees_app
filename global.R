@@ -17,3 +17,5 @@ all_years  <- sort(unique(honey_data$year))
 
 
 enableBookmarking(store = "url")
+
+## test on github actions
