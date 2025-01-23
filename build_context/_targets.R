@@ -32,12 +32,12 @@ list(
   tar_target(
     production_1995,
     plot_production_by_year(honey_data, 1995)
-  )
+  ),
 
   ## Create a quarto document with the functions
-  # tar_quarto(
-  #   name = my_doc,
-  #   path = "my_doc.qmd"
-  # )
+  tar_quarto(
+    name = my_doc,
+    path = "my_doc.qmd"
+  )
 
 )

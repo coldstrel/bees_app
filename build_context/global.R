@@ -1,10 +1,6 @@
 library(myProject)
 library(dplyr)
 library(ggplot2)
-library(targets)
-cat("The 'targets' package has been successfully loaded.\n")
-
-
 source("functions.R")
 data("honey_data")
 
