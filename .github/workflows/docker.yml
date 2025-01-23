@@ -1,4 +1,4 @@
-name: Build and Test Dockerized Shiny App
+name: Build and Test Dockerized Shiny
 
 on:
   push:
@@ -38,5 +38,5 @@ jobs:
     # Step 6: Stop and remove the container
     - name: Cleanup
       run: |
-        docker stop shiny_app
-        docker rm shiny_app
+        docker stop bees_shiny_app
+        docker rm bees_shiny_app
