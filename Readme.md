@@ -16,7 +16,7 @@ To run the shiny app _Docker_ must be installed on your computer.
     git clone https://github.com/coldstrel/bees_app
     ```
 
-2) Build the image (Dockerfile)
+2) Build the image (Dockerfile), for this you have to bee inside the "bees_app" directory, otherwise an error will appear.
 
     ```
     docker build -t bees_shiny_app .
