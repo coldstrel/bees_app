@@ -1,0 +1,42 @@
+FROM rocker/r-ver:4.2.1
+
+RUN apt-get update && apt-get install -y \
+    libglpk-dev \
+    libxml2-dev \
+    libcairo2-dev \
+    libgit2-dev \
+    default-libmysqlclient-dev \
+    libpq-dev \
+    libsasl2-dev \
+    libsqlite3-dev \
+    libssh2-1-dev \
+    libxtst6 \
+    libcurl4-openssl-dev \
+    libharfbuzz-dev \
+    libfribidi-dev \
+    libfreetype6-dev \
+    libpng-dev \
+    libtiff5-dev \
+    libjpeg-dev \
+    unixodbc-dev \
+    libcurl4-openssl-dev \
+    libssl-dev \
+    libxml2-dev \
+    libgit2-dev \
+    wget
+
+
+RUN wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.2.269/quarto-1.2.269-linux-amd64.deb -O /home/quarto.deb
+RUN apt-get install --yes /home/quarto.deb
+RUN rm /home/quarto.deb
+
+RUN R -e "install.packages(c('devtools','remotes', 'tidyverse', 'janitor', \
+   'shiny', 'targets', 'tarchetypes', \
+   'quarto', 'shiny', 'testthat', \
+   'usethis', 'rio', 'dplyr', 'ggplot2'))"
+
+RUN R -e "devtools::install_github('coldstrel/Package_FERNANDEZ', ref = 'cdae48a0b9afe4a2c20d12e85b3f3ab1ab351cdb')"
+
+##
+
+CMD ["R"]
